@@ -6,7 +6,11 @@
 
 # Author: Jamie Tohall
 
-import pandas
-import seaborn
-import matplotlib.pyplot
-import numpy 
+import pandas as pd # To read in Iris.csv file which contains the Iris Data Set
+import seaborn as sns # To use historgrams, scatterplots, and pairplots
+import matplotlib.pyplot as plt # To create plots
+import numpy as np #
+
+# Read in the Iris data set as 'Irisdata'.
+Irisdata = pd.read_csv("Iris.csv.txt")
+
