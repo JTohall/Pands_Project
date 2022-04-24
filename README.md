@@ -33,7 +33,31 @@ Based on the combination of these four features, Fisher developed a linear discr
 
 
 
+## Process of Data Analysis ###
 
+<br/>
+
+###  Importing Modules ###
+<br/>
+
+###  Reading in the Iris Data Set ###
+<br/>
+
+###  Preprocessing the Data Set ###
+<br/>
+
+### Creating a text file for Summary Output ###
+<br/>
+
+### Histograms ###
+<br/>
+
+### Scatter Plots ###
+<br/>
+
+### Conclusion ###
+
+<br/>
 
 
 
