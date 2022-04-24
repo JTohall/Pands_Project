@@ -29,6 +29,7 @@ Based on the combination of these four features, Fisher developed a linear discr
 
  ![picture alt](https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png)
  
+  Iris dataset contains five columns such as Petal Length, Petal Width, Sepal Length, Sepal Width and Species Type. 
 
 
 
