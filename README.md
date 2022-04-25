@@ -55,6 +55,9 @@ Based on the combination of these four features, Fisher developed a linear discr
 ### Scatter Plots ###
 <br/>
 
+### Pairplots ###
+<br/>
+
 ### Conclusion ###
 
 <br/>
