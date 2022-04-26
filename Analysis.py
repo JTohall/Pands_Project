@@ -20,12 +20,13 @@ import numpy as np
 # Will read in the Iris data set from the csv file I downloaded and saved ontop my desktop
 Irisdata = pd.read_csv("Iris.csv")
 
+
 ####### Creating a text file to output the variable summary #######
 
-# I created a text file and wrote in the title. 
-with open ("Summary_of_Variables", "w") as f: 
-   f.write(str(Irisdata))
-
+# I created a text file. 
+text = open ("Summary_of_Variables", "w")
+Irisdata.head()
+  
 
 ####### Preprocessing the Data Set #######
 
@@ -61,17 +62,42 @@ print (' ')
 
 ####### Data Analysis #######
 
-plt.hist(Irisdata["sepal_length"], color="blue")   
-plt.title("sepal length")                    
-plt.xlabel("length (cm)")                   
-plt.ylabel("Number of flowers")             
-plt.savefig("sepal_length_histogram.png")   
-plt.clf()  
+# I will start to analyse the Iris set Data using histograms, scatter plots and pairplots to display each of the variables.
 
+# The first histogram will display the Sepal Width for all three species.
 
+plt.figure(figsize = (10, 7))
+x = Irisdata.sepal_width  
+plt.hist(x, bins = 20, color = "lightgreen", edgecolor = "black")
+plt.title("Sepal Width for all Species")
+plt.xlabel("Sepal Width (cm)")
+plt.ylabel("Count")
+plt.savefig ("Sepal Width for all Species")
+plt.show()
 
+plt.figure(figsize = (10, 7))
+x = Irisdata.sepal_length 
+plt.hist(x, bins = 20, color = "lightgreen", edgecolor = "black")
+plt.title("Sepal Length for all Species")
+plt.xlabel("Sepal Length (cm)")
+plt.ylabel("Count")
+plt.savefig ("Sepal Length for all Species")
+plt.show()
 
+plt.figure(figsize = (10, 7))
+x = Irisdata.petal_width
+plt.hist(x, bins = 20, color = "lightgreen", edgecolor = "black")
+plt.title("Petal Width for all Species")
+plt.xlabel("Petal Width (cm)")
+plt.ylabel("Count")
+plt.savefig ("Petal Width for all Species")
+plt.show()
 
-
-
-
+plt.figure(figsize = (10, 7))
+x = Irisdata.petal_length
+plt.hist(x, bins = 20, color = "lightgreen", edgecolor = "black")
+plt.title("Petal Length for all Species")
+plt.xlabel("Petal Length (cm)")
+plt.ylabel("Count")
+plt.savefig ("Petal Length for all Species")
+plt.show()
