@@ -23,9 +23,11 @@ Irisdata = pd.read_csv("Iris.csv")
 
 ################# Creating a text file to output the variable summary #################
 
-# I created a text file. 
-text = open ("Summary_of_Variables", "w")
-Irisdata.head()
+# I created a text file titled 'Summary of Variables', and opened it in a write format. 
+
+with open ("Summary_of_Variables", "w") as f:
+   data = f.write ("\nSummary of Variables\n\n")
+
   
 
 ################# Preprocessing the Data Set #################
@@ -33,30 +35,27 @@ Irisdata.head()
 # The following commands will test that the data set I downloaded was read in properly and also that the information was correct. It will also give me an insight to the data set table and its information.
 
 # This will return the number of lines and columns in the data set table. Result is 150 lines and 5 columns (150,5)
-print (Irisdata.shape)
-
-# After each command I printed a space, to make the final output look neater and easier to read.
-print (' ')
+print (Irisdata.shape, file = open ("Summary_of_Variables", "w"))
+print (' ') # After each command I printed a space, to make the final output look neater and easier to read.
 
 # Will print the top 5 lines of the table, including the headers. The default value of the function is 5 lines of no exact command is given and I didn't specify a number.
-print (Irisdata.head())
+print (Irisdata.head(), file = open ("Summary_of_Variables", "a"))
 print (' ')
 
 # Similarly, I will also print a 15 line sample of the data, this will print 15 random lines.
-print (Irisdata.sample(15))
+print (Irisdata.sample(15), file = open ("Summary_of_Variables", "a"))
 print ('')
 
 # The following command will output all the columns from the dataset in list form.
-print (Irisdata.columns)
+print (Irisdata.columns, file = open ("Summary_of_Variables", "a"))
 print ('')
-       
 
 # This will print a statistical insight of each of the four variable in the Data set including the mean values, standard deviation, minimum values and maximum values.
-print (Irisdata.describe())
+print (Irisdata.describe(), file = open ("Summary_of_Variables", "a"))
 print ('')
 
 # I then checked the balance of the data input, counting how many times each species was counted.
-print (Irisdata["species"].value_counts())
+print (Irisdata["species"].value_counts(), file = open("Summary_of_Variables", "a"))
 print ('')
 
 
