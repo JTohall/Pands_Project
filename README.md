@@ -43,16 +43,19 @@ Based on the combination of these four features, Fisher developed a linear discr
 ###  Reading in the Iris Data Set ###
 <br/>
 
-###  Preprocessing the Data Set ###
+### Creating a text file for Summary Output ###
 <br/>
 
-### Creating a text file for Summary Output ###
+###  Preprocessing the Data Set ###
 <br/>
 
 ### Histograms ###
 <br/>
 
 ### Scatter Plots ###
+<br/>
+
+### Pairplots ###
 <br/>
 
 ### Conclusion ###
