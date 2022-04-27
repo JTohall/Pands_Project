@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt # To create histograms and scatterplots
 ################# Read in Iris Data Set #################
 
 # I read in the Iris data set from the file I downloaded and saved ontop my desktop. I downloaded the data as a txt file, and changed the suffix to .csv
-# I downloaded the data from - "iris data set "https://pyhub01.gitbook.io/python-complete-tutorial/data-mining-and-machine-learning/iris-data-set"
+# I downloaded the data from - "https://pyhub01.gitbook.io/python-complete-tutorial/data-mining-and-machine-learning/iris-data-set"
 Irisdata = pd.read_csv("Iris.csv")
 
 
@@ -30,6 +30,7 @@ with open ("Summary_of_Variables", "w") as f:
 # The following commands will test that the data set I downloaded was read in properly and also that the information was correct. 
 # It will also give me an insight to the Iris Data Set and its information. All information from each command will then
 # be directed to the text file "Summary of Variables".
+
 
 # This will return the number of lines and columns in the data set table. Result is 150 lines and 5 columns (150,5)
 print ("Number of lines and columns in Iris Data Set", file = open ("Summary_of_Variables", "a")) 
@@ -58,7 +59,7 @@ print (Irisdata.columns, file = open ("Summary_of_Variables", "a")) # 'Columns' 
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
 
 
-# This will print a statistical insight of each of the four variable in the Data set including the mean values, standard deviation, minimum values and maximum values.
+# This will print a statistical insight of each of the four species in the Data set including the mean values, standard deviation, minimum values and maximum values.
 print ("Statistical Insight", file = open ("Summary_of_Variables", "a")) # Command title
 print (Irisdata.describe(), file = open ("Summary_of_Variables", "a")) # 'Describe' command executed
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
@@ -70,17 +71,17 @@ print (Irisdata["species"].value_counts(), file = open("Summary_of_Variables", "
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
 
 
-# Calculating Sum, Median and Mean of the Sepal Length
+# Calculating Sum, Mean and Median of the Sepal Length
 print ("Sum, Median and Mean of Sepal Length", file = open ("Summary_of_Variables", "a"))
 # Title for the Sepal Length calculations, sent to the txt file. 
 sum_data = Irisdata["sepal_length"].sum() # Calculates the sum of the sepal length data
 mean_data = Irisdata["sepal_length"].mean() # Calculates the mean of the sepal length data
 median_data = Irisdata["sepal_length"].median() #Calculates the median of the sepal length data
 print("Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data, file =open("Summary_of_Variables", "a"))
-# Prints the outputs and sends them to the text file
+# Prints the results, each to a new line, and sends them to the text file
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line added
 
-# Sum, Median and Mean of Sepal Width 
+# Sum, Mean and Median of Sepal Width 
 # This command and the following two are the same as above, only changing the variable
 print ("Sum, Median and Mean of Sepal Width", file = open ("Summary_of_Variables", "a"))
 sum_data = Irisdata["sepal_width"].sum()
@@ -89,7 +90,7 @@ median_data = Irisdata["sepal_width"].median()
 print("Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data, file =open("Summary_of_Variables", "a"))
 print ("\n", file = open ("Summary_of_Variables", "a"))
 
-# Sum, mean and Mode of Petal Length
+# Sum, Mean and Median of Petal Length
 print ("Sum, Median and Mean of Petal Length", file = open ("Summary_of_Variables", "a"))
 sum_data = Irisdata["petal_length"].sum()
 mean_data = Irisdata["petal_length"].mean()
@@ -97,7 +98,7 @@ median_data = Irisdata["petal_length"].median()
 print("Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data, file =open("Summary_of_Variables", "a"))
 print ("\n", file = open ("Summary_of_Variables", "a"))
 
-# Sum, Mean and Mode of Petal Width
+# Sum, Mean and Median of Petal Width
 print ("Sum, Median and Mean of Petal Width", file = open ("Summary_of_Variables", "a"))
 sum_data = Irisdata["petal_width"].sum()
 mean_data = Irisdata["petal_width"].mean()
@@ -186,7 +187,7 @@ plt.savefig("Overlapping Histogram - Petal Width")
 
 ################## Scatterplots #################
 
-# Scatterplots are a great visual tool for classifying a large data set and are also easy to understand and categorise the information
+# Scatterplots are a great visual tool for classifying a large data set and are also easy to understand and to categorise information
 
 # Scatterplot to show correlation of Sepal Length & Sepal Width for each Species
 plt.figure(figsize=(10,10),dpi=200) # Using matplotlib to create the scatterplot, and defining the figure size
@@ -231,20 +232,19 @@ plt.savefig("Scatterplot - Petal Width v Sepal Width")
 # of Variables. A Scatterplot matrix is a great tool for assessing the pairwise relationship between two or more variables.
 
 # Using seaborn module to create scatterplot matrix (also known as a pairplot) 
-# Inputting the data, 'hue="species" will colour the scatterplot according to the species column fromt he data set. I set "o" as
+# Inputting the data, 'hue="species"' will colour the scatterplot according to the species column from the data set. I set "o" as
 # all the markers, and used the colours blue, orange and green for the different species, keeping the same colours as previous histograms. 
 sns.pairplot(Irisdata, hue= "species", markers=["o","o","o"], palette=["blue","orange","green"])
 plt.savefig("Scatterplot Matrix") # Saved the figure and labelled it
 plt.close() 
-# I then closed the plot, as when I continued on to create a Heatmap it was instead added to the scatterplot matrix.
-# Closing the plot prevented this from happening. 
+# I then closed the plot, as when I continued on to create a Heatmap it was instead added to the scatterplot matrix. Closing the plot prevented this from happening. 
 
 
 ################# Heatmap #################
 
-# A heatmap is a type of chart that uses different shades of colors to represent data values. It can easily show the
-# strong correlations between variables.
+# A heatmap is a type of chart that uses different shades of colours to represent data values. It can easily show the strong correlations between variables.
 
 plt.figure(figsize=(10,11)) # Defining figure size
-sns.heatmap(Irisdata.corr(),annot=True) # Creating heat map and annotating the heatmap with values when True
+sns.heatmap(Irisdata.corr(),annot=True) # Creating heat map, establishing the data to be used, and annot will annotate the heatmap with values when True
 plt.savefig ("Heatmap") # Saving figure and labelling it
+
