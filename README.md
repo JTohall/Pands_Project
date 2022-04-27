@@ -21,23 +21,30 @@
 <br/>
 
 ## Fisher's Iris Data Set ##
-
-Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper 'The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis'. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. 
-Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
-
 <br/>
 
  ![picture alt](https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png)
+ <br/>
  
-  Iris dataset contains five columns such as Petal Length, Petal Width, Sepal Length, Sepal Width and Species Type. 
-
-
-
-## Process of Data Analysis ###
+Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper 'The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis'. The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). 
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.
+The iris data set is widely used as a beginner's dataset for machine learning purposes, often known as the 'Hello world' in the field of data science. The Data set is used in data mining, classification and clustering examples and to test algorithms. 
 
 <br/>
 
+## Process of Data Analysis ###
+<br/>
+
 ###  Importing Modules ###
+
+I Imported three modules in total; <br/>
+
+**Seaborn** - I used Seaborn which is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. <br/>
+
+**Matplotlib** - Matplotlib is a low level graph plotting library in python that serves as a visualization utility. One of the greatest benefits of visualization is that it allows us visual access to huge amounts of data in easily digestible visuals. Matplotlib consists of several plots like line, bar, scatter, histogram etc. <br/>
+
+**Pandas** - Pandas is an open-source library that is made mainly for working with relational or labeled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series.
+
 <br/>
 
 ###  Reading in the Iris Data Set ###
