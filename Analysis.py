@@ -1,9 +1,4 @@
 # Programming and Scripting Final Project - 2022
-
-# This project concerns the well-known Fisher’s Iris data set. You must research the data set and write documentation and code to investigate it.
-# The programme must output a summary of each variable to a single text file, Save a histogram of each variable to png files and output a scatterplot of each pair of variables. 
-# Perform any other analysis you think is appropriate. 
-
 # Author: Jamie Tohall
 
 
@@ -26,8 +21,7 @@ Irisdata = pd.read_csv("Iris.csv")
 # I created a text file titled 'Summary of Variables', and opened it in a write format. 
 
 with open ("Summary_of_Variables", "w") as f:
-   data = f.write ("\nSummary of Variables\n\n")
-
+   f.write
   
 
 ################# Preprocessing the Data Set #################
@@ -36,27 +30,22 @@ with open ("Summary_of_Variables", "w") as f:
 
 # This will return the number of lines and columns in the data set table. Result is 150 lines and 5 columns (150,5)
 print (Irisdata.shape, file = open ("Summary_of_Variables", "w"))
-print (' ') # After each command I printed a space, to make the final output look neater and easier to read.
+ # After each command I printed a space, to make the final output look neater and easier to read.
 
 # Will print the top 5 lines of the table, including the headers. The default value of the function is 5 lines of no exact command is given and I didn't specify a number.
 print (Irisdata.head(), file = open ("Summary_of_Variables", "a"))
-print (' ')
 
 # Similarly, I will also print a 15 line sample of the data, this will print 15 random lines.
 print (Irisdata.sample(15), file = open ("Summary_of_Variables", "a"))
-print ('')
 
 # The following command will output all the columns from the dataset in list form.
 print (Irisdata.columns, file = open ("Summary_of_Variables", "a"))
-print ('')
 
 # This will print a statistical insight of each of the four variable in the Data set including the mean values, standard deviation, minimum values and maximum values.
 print (Irisdata.describe(), file = open ("Summary_of_Variables", "a"))
-print ('')
 
 # I then checked the balance of the data input, counting how many times each species was counted.
 print (Irisdata["species"].value_counts(), file = open("Summary_of_Variables", "a"))
-print ('')
 
 
 ################# Data Analysis #################
@@ -105,32 +94,56 @@ plt.ylabel("Count")
 plt.savefig ("Histogram - Petal Length for all Species")
 
 
+################# Overlapping Histograms  #################
 
-################## Scatterplot Matrix #################
-sns.pairplot(Irisdata, hue= "species", markers=["o","o","o"], palette=["yellow","red","purple"])
-plt.savefig("scatterplot Matrix")
-
-################## Scatterplots #################
 sns.FacetGrid(Irisdata, hue="species", height=5)\
    .map(sns.distplot, "sepal_length")\
-    .add_legend()
+   .add_legend()
 plt.title ("Sepal length")
-plt.savefig("Sepal Length")
+plt.savefig("Overlapping Histogram - Sepal Length")
 
 sns.FacetGrid(Irisdata, hue="species", height=5)\
    .map(sns.distplot, "sepal_width")\
    .add_legend();
 plt.title ("Sepal Width")
-plt.savefig("Sepal Width")
+plt.savefig("Overlapping Histogram - Sepal Width")
 
 sns.FacetGrid(Irisdata, hue="species", height=5)\
    .map(sns.distplot, "petal_length")\
    .add_legend();
 plt.title ("Petal Length")
-plt.savefig("Petal Length")
+plt.savefig("Overlapping Histogram - Petal Length")
 
 sns.FacetGrid(Irisdata, hue="species", height=5)\
    .map(sns.distplot, "petal_width")\
    .add_legend();
 plt.title ("Petal Width")
-plt.savefig("Petal Width")
+plt.savefig("Overlapping Histogram - Petal Width")
+
+
+################## Scatterplots #################
+
+plt.figure (figsize=(10,10),dpi=200)
+sns.set_style("whitegrid")
+sns.scatterplot(x='sepal_length', y='sepal_width',data= Irisdata, hue='species')
+plt.savefig ("Scatterplot - Sepal Length v Sepal Width")
+
+plt.figure (figsize=(10,10),dpi=200)
+sns.set_style("whitegrid")
+sns.scatterplot(x='petal_length', y='petal_width',data= Irisdata, hue='species')
+plt.savefig ("Scatterplot - Petal Length v Petal Width")
+
+plt.figure (figsize=(10,10),dpi=200)
+sns.set_style("whitegrid")
+sns.scatterplot(x='sepal_length', y='petal_width',data= Irisdata, hue='species')
+plt.savefig ("Scatterplot - Sepal Length v Petal Width")
+
+plt.figure (figsize=(10,10),dpi=200)
+sns.set_style("whitegrid")
+sns.scatterplot(x='petal_length', y='sepal_width',data= Irisdata, hue='species')
+plt.savefig ("Scatterplot - Petal Length v Sepal Width")
+
+################## Scatterplot Matrix #################
+
+sns.pairplot(Irisdata, hue= "species", markers=["o","o","o"], palette=["blue","orange","green"])
+plt.savefig("Scatterplot Matrix")
