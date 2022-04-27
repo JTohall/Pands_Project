@@ -52,10 +52,13 @@ Based on the combination of these four features, Fisher developed a linear discr
 ### Histograms ###
 <br/>
 
-### Scatter Plots ###
+### Overlapping Histograms ###
 <br/>
 
-### Pairplots ###
+### Scatterplots ###
+<br/>
+
+### Scatterplot Matrix ###
 <br/>
 
 ### Conclusion ###
