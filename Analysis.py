@@ -190,7 +190,7 @@ plt.savefig("Overlapping Histogram - Petal Width")
 # Scatterplots are a great visual tool for classifying a large data set and are also easy to understand and to categorise information
 
 # Scatterplot to show correlation of Sepal Length & Sepal Width for each Species
-plt.figure(figsize=(10,10),dpi=200) # Using matplotlib to create the scatterplot, and defining the figure size
+plt.figure(figsize=(10,10),dpi=72) # Using matplotlib to create the scatterplot, and defining the figure size
 sns.set_style("whitegrid") # Using seaborn to create a white grid background
 sns.scatterplot(x='sepal_length', y='sepal_width',data= Irisdata, hue='species') # Defining the X and Y axis, data input and hue will categorise the species column.
 plt.savefig("Scatterplot - Sepal Length v Sepal Width") # Saving the figure and naming the png image.
