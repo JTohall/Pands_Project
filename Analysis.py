@@ -197,7 +197,7 @@ sns.scatterplot(x='sepal_length', y='sepal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Sepal Length v Sepal Width") # Saving the figure and naming the png image.
 
 # Showing the correlation of Petal Length & Petal Width for each Species
-plt.figure(figsize=(10,10),dpi=72)
+plt.figure(figsize=(10,10),dpi= 80)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='petal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Length v Petal Width")
@@ -209,7 +209,7 @@ sns.scatterplot(x='sepal_length', y='petal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Sepal Length v Petal Width")
 
 # Showing the correlation of Petal Length & Sepal Width of each Species
-plt.figure(figsize=(10,10),dpi=72)
+plt.figure(figsize=(10,10),dpi= 80)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='sepal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Length v Sepal Width")
