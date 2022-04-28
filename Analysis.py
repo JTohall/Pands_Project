@@ -190,37 +190,37 @@ plt.savefig("Overlapping Histogram - Petal Width")
 # Scatterplots are a great visual tool for classifying a large data set and are also easy to understand and to categorise information
 
 # Scatterplot to show correlation of Sepal Length & Sepal Width for each Species
-plt.figure(figsize=(10,10),dpi=72) # Using matplotlib to create the scatterplot, and defining the figure size
+plt.figure(figsize=(10,10),dpi=100) # Using matplotlib to create the scatterplot, and defining the figure size
 sns.set_style("whitegrid") # Using seaborn to create a white grid background
 sns.scatterplot(x='sepal_length', y='sepal_width',data= Irisdata, hue='species') # Defining the X and Y axis, data input and hue will categorise the species column.
 plt.savefig("Scatterplot - Sepal Length v Sepal Width") # Saving the figure and naming the png image.
 
 # Showing the correlation of Petal Length & Petal Width for each Species
-plt.figure(figsize=(10,10),dpi=200)
+plt.figure(figsize=(10,10),dpi=100)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='petal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Length v Petal Width")
 
 # Showing the correlation of Sepal Length & Petal Width for each Species
-plt.figure(figsize=(10,10),dpi=200)
+plt.figure(figsize=(10,10),dpi=100)
 sns.set_style("whitegrid")
 sns.scatterplot(x='sepal_length', y='petal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Sepal Length v Petal Width")
 
 # Showing the correlation of Petal Length & Sepal Width of each Species
-plt.figure(figsize=(10,10),dpi=200)
+plt.figure(figsize=(10,10),dpi=100)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='sepal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Length v Sepal Width")
 
 # Showing the correlation of Petal Length & Sepal Length of each Species
-plt.figure(figsize=(10,10),dpi=200)
+plt.figure(figsize=(10,10),dpi=100)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='sepal_length',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Length v Sepal Length")
 
 # Showing the correlation of Petal Width & Sepal Width of each Species
-plt.figure(figsize=(10,10),dpi=200)
+plt.figure(figsize=(10,10),dpi=100)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_width', y='sepal_width',data= Irisdata, hue='species')
 plt.savefig("Scatterplot - Petal Width v Sepal Width")
