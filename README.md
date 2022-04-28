@@ -75,3 +75,27 @@ I Imported three modules in total; <br/>
 
 
 ## References ##
+
+[1] 3.6.10.4. Plot 2D views of the iris dataset — Scipy lecture notes (scipy-lectures.org)<br/>
+[2] Exploratory Data Analysis : Iris Dataset | by Pranshu Sharma | Analytics Vidhya | Medium <br/>
+[3] How To Make Histogram in Python with Pandas and Seaborn? - Python and R Tips (cmdlinetips.com)<br/>
+[4] How to Write to Text File in Python (pythontutorial.net)<br/>
+[5] Introduction to Pandas in Python - GeeksforGeeks <br/>
+[6] iris data set - Python complete tutorial (gitbook.io)<br/>
+[7] Iris flower data set - Wikipedia <br/>
+[8] Linear Regression in Python – Real Python <br/>
+[9] Linear Regression using Iris Dataset — ‘Hello, World!’ of Machine Learning | by Darryl See Wei Shen | Analytics Vidhya | Medium <br/>
+[10] Machine Learning in Python: Iris Classification -- Part 3 - Bing video <br/>
+[11] Overlapping Histograms with Matplotlib in Python - GeeksforGeeks <br/>
+[12] Python - Basics of Pandas using Iris Dataset - GeeksforGeeks <br/>
+[13] Python for Data Science - Exploratory Data Analysis - IRIS Dataset - Notepub <br/>
+[14] Seaborn (python-graph-gallery.com) <br/>
+[15] Seaborn Heatmap - A comprehensive guide - GeeksforGeeks <br/>
+[16] Seaborn Scatter Plot - Tutorial and Examples (stackabuse.com) <br/>
+[17] seaborn.heatmap — seaborn 0.11.2 documentation (pydata.org) <br/>
+[18] seaborn.pairplot — seaborn 0.11.2 documentation (pydata.org) <br/>
+[19] seaborn: statistical data visualization — seaborn 0.11.2 documentation (pydata.org) <br/>
+[20] ValueError: I/O operations on closed file (stechies.com) <br/>
+[21] What, When & How of Scatterplot Matrix in Python - Data Analytics (vitalflux.com) <br/>
+[22] What, When & How of Scatterplot Matrix in Python - Data Analytics (vitalflux.com) <br/>
+
