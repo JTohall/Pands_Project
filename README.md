@@ -32,22 +32,24 @@ The iris data set is widely used as a beginner's dataset for machine learning pu
 
 <br/>
 
-## Process of Data Analysis ###
+## Process of Data Analysis ##
 <br/>
 
-###  Importing Modules ###
+### Importing Modules ###
 
 I Imported three modules in total; <br/>
 
-**Seaborn** - I used Seaborn which is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. <br/>
+**Matplotlib** - Matplotlib is a low level graph plotting library in python that serves as a visualization utility. One of the greatest benefits of visualization is that it allows visual access to huge amounts of data in easily digestible visuals. Matplotlib consists of several plots like line, bar, scatter, histogram etc. I used Matplotlib in my analysis to create Histograms, Overlapping Histograms, Scatterplots, a Scatterplot Matrix and a Heatmap. <br/>
 
-**Matplotlib** - Matplotlib is a low level graph plotting library in python that serves as a visualization utility. One of the greatest benefits of visualization is that it allows us visual access to huge amounts of data in easily digestible visuals. Matplotlib consists of several plots like line, bar, scatter, histogram etc. <br/>
+**Seaborn** - Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. I used seaborn to create Overlapping Histograms, Scatterplots, a Scatterplot Matrix and a Heatmap. <br/>
 
-**Pandas** - Pandas is an open-source library that is made mainly for working with relational or labeled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series.
+**Pandas** - Pandas is an open-source library that is made mainly for working with relational or labelled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series. I used Pandas to read in the Iris data set CSV file
 
 <br/>
 
-###  Reading in the Iris Data Set ###
+### Reading in the Iris Data Set ###
+
+
 <br/>
 
 
