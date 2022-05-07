@@ -194,36 +194,42 @@ plt.savefig("Overlapping Histogram - Petal Width")
 plt.figure(figsize=(10,10),dpi=72) # Using matplotlib to create the scatterplot, and defining the figure size
 sns.set_style("whitegrid") # Using seaborn to create a white grid background
 sns.scatterplot(x='sepal_length', y='sepal_width',data= Irisdata, hue='species') # Defining the X and Y axis, data input and hue will categorise the species column.
+plt.title ("Sepal Length v Sepal Width")
 plt.savefig("Scatterplot - Sepal Length v Sepal Width") # Saving the figure and naming the png image.
 
 # Showing the correlation of Petal Length & Petal Width for each Species
 plt.figure(figsize=(10,10),dpi=72)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='petal_width',data= Irisdata, hue='species')
+plt.title ("Petal Length v Petal Width")
 plt.savefig("Scatterplot - Petal Length v Petal Width")
 
 # Showing the correlation of Sepal Length & Petal Width for each Species
 plt.figure(figsize=(10,10),dpi=72)
 sns.set_style("whitegrid")
 sns.scatterplot(x='sepal_length', y='petal_width',data= Irisdata, hue='species')
+plt.title ("Sepal Length v Petal Width")
 plt.savefig("Scatterplot - Sepal Length v Petal Width")
 
 # Showing the correlation of Petal Length & Sepal Width of each Species
 plt.figure(figsize=(10,10),dpi=72)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='sepal_width',data= Irisdata, hue='species')
+plt.title ("Petal Length v Sepal Width")
 plt.savefig("Scatterplot - Petal Length v Sepal Width")
 
 # Showing the correlation of Petal Length & Sepal Length of each Species
 plt.figure(figsize=(10,10),dpi=72)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_length', y='sepal_length',data= Irisdata, hue='species')
+plt.title ("petal Length v Sepal Length")
 plt.savefig("Scatterplot - Petal Length v Sepal Length")
 
 # Showing the correlation of Petal Width & Sepal Width of each Species
 plt.figure(figsize=(10,10),dpi=72)
 sns.set_style("whitegrid")
 sns.scatterplot(x='petal_width', y='sepal_width',data= Irisdata, hue='species')
+plt.title ("Petal Width v Sepal Width")
 plt.savefig("Scatterplot - Petal Width v Sepal Width")
 
 
