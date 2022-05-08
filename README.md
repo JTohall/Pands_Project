@@ -257,7 +257,8 @@ When we analyse the heatmap, we can see that the Sepal Length and Sepal Width ar
 <br/>
 
 ### Conclusion ###
-
+We can conclude that the Setosa Iris species has the smaller petal length and width, the smaller sepal length but the larger sepal width. This means that the Setosa is the smaller of the three species, and possibly the most distinguishable of the three. If trying to distingush the species from one another, it might be easier to measure the petals first. If the petal length is less than 2cm and the width is less than 0.6cm then according to the Iris Data set, it will be the Setosa species. The Sepal of the Setosa should also be more of a boxy shape, with the length and width being on average closer in size.<br/> 
+It may be harder to tell the Virginica and versicolor species apart, and they are often misclassified as eachother. If the Iris petal length is between 3cm and 5cm, and the petal width is between 1cm and 1.8cm then it may be classified as a Versicolor Iris. It may be hard to tell a Versicolor from a Virginica by measuring the Sepal length or width as the data from the two species over lap alot more when it comes to their Sepal sizes. 
 <br/>
 
 
