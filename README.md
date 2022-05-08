@@ -23,6 +23,7 @@
 <br/>
 
 ## Fisher's Iris Data Set ##
+Iris is a genus of 260–300 species of flowering plants with showy flowers. It takes its name from the Greek word for a rainbow, which is also the name for the Greek goddess of the rainbow, Iris. Some authors state that the name refers to the wide variety of flower colors found among the many species. As well as being the scientific name, iris is also widely used as a common name for all Iris species, as well as some belonging to other closely related genera. 
 <br/>
 
  ![picture alt](https://miro.medium.com/max/700/1*uo6VfVH87jRjMZWVdwq3Vw.png)
@@ -192,8 +193,20 @@ max        7.900000     4.400000      6.900000     2.500000
 <br/>
 
 ### Histograms ###
+I created four histograms in total, each one showing the data of all the three species in each of the categories; Petal Length, petal width, Sepal Length and Sepal Width. Each histogram gives us more of a visual insight to the results of each category and its numerical data.
 <img src="https://user-images.githubusercontent.com/98059109/167313582-0416ba9f-6ae5-4347-a537-b45bc9ee8f1f.png">
 <br/>
+**1. Petal Length for all Species**<br/>
+When viewing the first histogram I can see there is a gap in the petal length between 2cm and 3cm. The count of the petal length also seems to be quite varied, with a large count around the 1.5cm mark. 
+
+**2. Petal Width for all Species**<br/>
+Again, we can see a gap towards the left hand side of the histogram, between the 0.75cm and the 1cm mark. There is also quite a large count toward the lower end of the petal size. We could assume at this point that the gap in this histogram (and histogram 1) could be the difference between the Setosa species of iris, and the other two species Versicolor and Virginica. However this would be mostly speculation at this point as we have not yet looked at the results of each individual species in each category. 
+
+**3. Sepal Length for all Species**<br/>
+The overall count of the sepal seems to be quite varied, with no noticeably large count, unlike the petal length. The count seems to be evenly distributed but with no obvious pattern, making us unable to differentiate between the species and their sepal length.
+
+**4. Sepal Width for all Species**<br/>
+The histogram for Sepal with is giving us a triangle result, were the data count on the smaller and larger end of the sepal size are smaller, and it becomes larger in the middle, over the 3cm mark. Again it is difficult to distinguish the Iris species here without making assumptions.
 
 ### Overlapping Histograms ###
 <img src="https://user-images.githubusercontent.com/98059109/167313930-62e8eb3b-4e16-430d-92a5-3efae8a30429.png">
