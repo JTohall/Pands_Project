@@ -60,7 +60,7 @@ print (Irisdata.columns, file = open ("Summary_of_Variables", "a")) # 'Columns' 
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
 
 
-# This will print a statistical insight of each of the four species in the Data set including the mean values, standard deviation, minimum values and maximum values.
+# This will print a statistical insight of each of the four variables in the Data set including the mean values, standard deviation, minimum values and maximum values.
 print ("Statistical Insight", file = open ("Summary_of_Variables", "a")) # Command title
 print (Irisdata.describe(), file = open ("Summary_of_Variables", "a")) # 'Describe' command executed
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
