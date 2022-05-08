@@ -244,10 +244,11 @@ Looking at the Matrix and all the 12 scatterplots, I still see an obvious differ
 <br/>
 
 ### Heatmap ###
-A heatmap is a data visualization technique where colours represent how a value of interest changes with the values of other variables. It is a two-dimensional graphical representation of data with values encoded in colours, thereby giving a simplified, insightful, and visually appealing view of information. <br/>
+A heatmap is a data visualization technique where colours represent how a value of interest changes with the values of other variables. It is a two-dimensional graphical representation of data with values encoded in colours, thereby giving a simplified, insightful, and visually appealing view of information.
 
 <img src="https://user-images.githubusercontent.com/98059109/167313177-ac3a199d-826a-4c05-8d97-202412427fab.png" width=70% height=70%>
-
+<br/>
+When we analyse the heatmap, we can see that the Sepal Length and Sepal Width are slightly correlated with each other.
 <br/>
 
 
