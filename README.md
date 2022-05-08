@@ -224,20 +224,30 @@ This histogram shows us similar results to the petal length image. Again, all th
 When it comes to the sepal length, we can see that the results of each species overlap a bit more. We can even see an overlap in the middle between the larger setosa sepal length and the smaller Virginica Sepal length. The results show us what we otherwise would have assumed, that Setosa was on the smaller end of the Sepal length and Virginica is on the larger end, with Versicolor in the middle. 
 
 **4. Sepal Width**<br/>
-When looking at the overlapping histogram for Sepal Width, at first glance it looks like a mistake! Setosa seems to have the average larger Sepal width of the three species. Versicolor is on the smaller side instead of the middle, unlike the previous three categories, and Virginica is cushioned in the middle, with quite alot of overlap on either end. 
+When looking at the overlapping histogram for Sepal Width, at first glance it looks like a mistake! Setosa seems to have the average larger Sepal width of the three species. Versicolor is on the smaller side instead of the middle unlike the previous three categories, and Virginica is cushioned in the middle, with quite alot of overlap on either end.
 
 <br/>
 
 ### Scatterplots ###
+I created six scatterplots in total, one of each pair of variables. Petal Length v Petal Width, Petal Length v Sepal length, Petal Length v Sepal Width, Petal Width v Sepal Width, Sepal Length v Petal Width and Sepal Length v Sepal Width. 
 <img src="https://user-images.githubusercontent.com/98059109/167314314-eca66a04-e049-441a-b110-120207ca000b.png">
+<br/>
+As you can see from all of the six scatterplots above, there is a noticeable difference between the Setosa results in all of the variables, and the Versicolor and Virginica results. Versicolor and Virginica again are alot closer in size, however Versicolor on average is slightly smaller than Virginica.
+
 <br/>
 
 ### Scatterplot Matrix ###
+I created a scatterplot matrix as I thought it was a nice visualisation tool to easily explore any trends in the data. It shows the same results as our overlapping histograms and the scatterplots, although some of the scatterplots in the matrix are flipped and inverted to the ones we previously created, as it also shows the cateogries on different axies. This is a great way to look at data from a different angle (literally) and see if there are any breakthough results that we previously missed.
 <img src="https://user-images.githubusercontent.com/98059109/167313293-2fbb8866-7f14-448b-82b9-33dfd2428527.png" width=80% height=80%>
+<br/>
+Looking at the Matrix and all the 12 scatterplots, I still see an obvious difference between the Setosa data and the virginica and Versicolor data.
 <br/>
 
 ### Heatmap ###
+A heatmap is a data visualization technique where colours represent how a value of interest changes with the values of other variables. It is a two-dimensional graphical representation of data with values encoded in colours, thereby giving a simplified, insightful, and visually appealing view of information. <br/>
+
 <img src="https://user-images.githubusercontent.com/98059109/167313177-ac3a199d-826a-4c05-8d97-202412427fab.png" width=70% height=70%>
+
 <br/>
 
 
