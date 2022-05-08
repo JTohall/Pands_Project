@@ -241,8 +241,9 @@ I created a scatterplot matrix as I thought it was a nice visualisation tool to 
 
 <img src="https://user-images.githubusercontent.com/98059109/167313293-2fbb8866-7f14-448b-82b9-33dfd2428527.png" width=80% height=80%>
 <br/>
-Looking at the Matrix and all the 12 scatterplots, I still see an obvious difference between the Setosa data and the virginica and Versicolor data.
+Looking at the Matrix and all the 12 scatterplots, I still see an obvious difference between the Setosa data and the closer virginica and Versicolor data.
 
+<br/>
 <br/>
 
 ### Heatmap ###
@@ -253,7 +254,7 @@ A heatmap is a data visualization technique where colours represent how a value 
 When we analyse the heatmap, we can see that the Sepal Length and Sepal Width are slightly correlated with each other.
 
 <br/>
-
+<br/>
 
 ### Conclusion ###
 
