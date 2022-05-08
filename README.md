@@ -65,7 +65,17 @@ As outlined in the project instructions, I was to create a single text file wher
 
 ###  Preprocessing the Data Set ###
 
-Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, column index and the statistical insight to each variable. Each command output is then sent to the text file titled "Summary of Variables from the Iris Data Set". 
+Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, column index and the statistical insight to each variable. Each command output is then sent to the text file titled "Summary of Variables from the Iris Data Set". To direct the output of the commands to the text file I wrote ```print (Irisdata.shape, file = open ("Summary_of_Variables", "a"))```. While first writing my code I wrote "w" at the end of this command instead of "a", this would then rewrite over anything I had previously in my text file, so I could never have more than one command output there at one time. However, after some very useful feedback in our class teams discussion, I was shown that after the initial commmand is entered with "w", every command after is added with "a", which doesn't overwrite the previous enteries. <br/>
+For most of the commands below, they were all similar to write (Apart from Sum, Mean and Median). With shape for example, I firstly wrote a title for the command entry, and sent the output to the text file ```print ("Number of lines and columns in Iris Data Set", file = open ("Summary_of_Variables", "a"))```. In the next line I would execute the Shape command within the data set, which I saved as 'Irisdata', and output the results to the text file ```print (Irisdata.shape, file = open ("Summary_of_Variables", "a"))```. Finally, I printed a new line, so there was space between this entry and the next, making the text file easier to read ```print ("\n", file = open ("Summary_of_Variables", "a"))```.,br/>
+With the Sum, Mean & Median command it was formatted a little differently. To calcualte the Sum, Mean and Median of the Sepal Length for example, I again started with a header for the command input in the text file ```print ("Sum, Median and Mean of Sepal Length", file = open ("Summary_of_Variables", "a")). I then calculated the sum, by again referencing my data 'Irisdata', and entering the column labelled "sepal length" as the data that I wish to be calculated. I repeated this for the mean and the Median.
+```
+sum_data = Irisdata["sepal_length"].sum() 
+mean_data = Irisdata["sepal_length"].mean() 
+median_data = Irisdata["sepal_length"].median()
+```
+I then directed the ouput to the text file, making sure to place a \n after each entry so it was formatted as a list, rather than it all being printed on the one line ```print("Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data, file =open("Summary_of_Variables", "a"))```
+again, I would then print a new line after this entry, as to neatly format the text file ```print ("\n", file = open ("Summary_of_Variables", "a"))```<br/>
+I would repeat the same code above for the Sepal Width, Petal Length and Petal Width. 
 
 <br/>
 
@@ -102,7 +112,7 @@ The 'head' command will output the first 5 lines of the Data set including the h
 
 * **Sample**<br/>
 From the sample command we will receive an output of 15 random lines from the date set underneath the column headers. Each time this command is executed, a different sample is outputted. Again, we can edit the number of sample lines we wish to see, I chose 15 lines as I thought it was a large enough number to gather some insight of the data recorded. From the sample lines outputted we can see the three different species of Iris are Virginica, Setosa and Versicolor. In total we have 6 lines of data for Setosa, 6 lines for Virginica, and 3 lines for Versicolor. I think this is a reasonable sample number for each species as it will be unlikely that I would get an even 5 lines for each of the species. If the output was heavily uneven or there was a species missing from the sample then I would execute the command again. On the left of the table we see a column of different numbers, these are the line numbers which tell us where on the table the sample line is from. <br/>
-If I were to only analyse the data below, I would assume that the Setosa was the smaller of the three species given the petal width of the Setosa on average is 0.2, and the largest petal length counted is 1.6. The Versicolor and Virginica species seem to be more similar in size, however the Virginica is recording the larger numbers across all the columns.
+If I were to only analyse the data given below, I would assume that the Setosa was the smaller of the three species given the petal width of the Setosa on average is only 0.2, and its largest petal length counted is 1.6. The smallest petal length for the Versicolor is 3.6, and the smallest for the Virginica is 5.5, which shows a 2cm differernce between the Setosa's largest petal length and the next species smallest petal length. When we look at sepal width however, its the Versicolor with the smaller numbers, Setosa then seems to have the smaller Sepal Lengths. The Versicolor and Virginica species seem to be more similar in size, however the Virginica is recording the larger numbers across all the columns. It will be interesting to see if this short analysis of a sample of data is still accurate when analysing the full data set.
 
 ```
      sepal_length  sepal_width  petal_length  petal_width     species
@@ -137,22 +147,27 @@ Name: species, dtype: int64
 <br/>
 
 * **Sum, Mean & Median**<br/>
+I then calcualted the sum, mean and median of each of the species and their petal length, petal 
 
+Sepal Length
 ```
 Sum: 876.5 
 Mean: 5.843333333333335 
 Median: 5.8
 ```
+Sepal Width
 ```
 Sum: 458.1 
 Mean: 3.0540000000000007 
 Median: 3.0
 ```
+Petal Length
 ```
 Sum: 563.8 
 Mean: 3.7586666666666693 
 Median: 4.35
 ```
+Petal Width
 ```
 Sum: 179.8 
 Mean: 1.1986666666666672 
