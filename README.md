@@ -192,27 +192,24 @@ max        7.900000     4.400000      6.900000     2.500000
 <br/>
 
 ### Histograms ###
-<br/>
 <img src="https://user-images.githubusercontent.com/98059109/167313582-0416ba9f-6ae5-4347-a537-b45bc9ee8f1f.png">
 <br/>
 
 ### Overlapping Histograms ###
-<br/>
 <img src="https://user-images.githubusercontent.com/98059109/167313930-62e8eb3b-4e16-430d-92a5-3efae8a30429.png">
 <br/>
 
 ### Scatterplots ###
+<img src="https://user-images.githubusercontent.com/98059109/167314314-eca66a04-e049-441a-b110-120207ca000b.png">
 <br/>
 
 ### Scatterplot Matrix ###
-<br/>
-<img src="https://user-images.githubusercontent.com/98059109/167313293-2fbb8866-7f14-448b-82b9-33dfd2428527.png">
+<img src="https://user-images.githubusercontent.com/98059109/167313293-2fbb8866-7f14-448b-82b9-33dfd2428527.png" width=80% height=80%>
 <br/>
 
 ### Heatmap ###
-
-<img src="https://user-images.githubusercontent.com/98059109/167313177-ac3a199d-826a-4c05-8d97-202412427fab.png">
-
+<img src="https://user-images.githubusercontent.com/98059109/167313177-ac3a199d-826a-4c05-8d97-202412427fab.png" width=70% height=70%>
+<br/>
 
 
 ### Conclusion ###
