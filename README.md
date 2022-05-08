@@ -9,6 +9,7 @@
 #### Lecturer: Andrew Beattie
 #### Submission Date: 29th April 2022
 
+
 <br/>
 
 
@@ -44,13 +45,13 @@ I Imported three modules in total; <br/>
 
 **Seaborn** - Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. I used seaborn to create Overlapping Histograms, Scatterplots, a Scatterplot Matrix and a Heatmap. <br/>
 
-**Pandas** - Pandas is an open-source library that is made mainly for working with relational or labelled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series. I used Pandas to read in the Iris data set CSV file
+**Pandas** - Pandas is an open-source library that is made mainly for working with relational or labelled data both easily and intuitively. It provides various data structures and operations for manipulating numerical data and time series. I used Pandas to read in the Iris data set CSV file.
 
 <br/>
 
 ### Reading in the Iris Data Set ###
 
-I began by searching online for the Iris Data Set. I found the full data code on pyhub01.gitbook.io, so I copied the code and pasted it to a text file and titled it 'iris'. I then changed the suffix of the text file from txt to csv, this changed the format from plain text to a table. I then saved the csv file to a folder on my homepage titled 'Pands Project', So I was then able to access the file through Visula Studio Code. 
+I began by searching online for the Iris Data Set. I found the full data code on pyhub01.gitbook.io, so I copied the code and pasted it to a text file and titled it 'iris'. I then changed the suffix of the text file from txt to csv, this changed the format from plain text to a table. I then saved the csv file to a folder on my homepage titled 'Pands Project', So I was then able to access the file through Visula Studio Code. I then opened the csv file in read format so I could start to analyse the data. ```Irisdata = pd.read_csv("Iris.csv").```
 
 Link to Iris Data Set: https://pyhub01.gitbook.io/python-complete-tutorial/data-mining-and-machine-learning/iris-data-set
 
@@ -58,11 +59,12 @@ Link to Iris Data Set: https://pyhub01.gitbook.io/python-complete-tutorial/data-
 
 ### Creating a text file for Summary Output ###
 
-As outlined in the project instructions, I was to create a single text file where I could output a summary of each variable from the Data Set. I created a text file titled 'Summary of Variables', and opened it in write format ```with open ("Summary_of_Variables", "w") as f:```
+As outlined in the project instructions, I was to create a single text file where I could output a summary of each variable from the Data Set. I created a text file titled 'Summary of Variables', and opened it in write format ```with open ("Summary_of_Variables", "w") as f:```. I wrote the title of the text file ```f.write("Summary of Variables from The Iris Data Set")```, and I used '\n' to create a new space under the title ```f.write("\n\n")```.  
 
 <br/>
 
 ###  Preprocessing the Data Set ###
+
 <br/>
 
 ### Histograms ###
