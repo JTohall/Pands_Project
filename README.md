@@ -65,7 +65,7 @@ As outlined in the project instructions, I was to create a single text file wher
 
 ###  Preprocessing the Data Set ###
 
-Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, column index and the statistical insight to each variable. Each command output is then sent to the text file titled "Summary of Variables fromt he Iris Data Set". 
+Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, column index and the statistical insight to each variable. Each command output is then sent to the text file titled "Summary of Variables from the Iris Data Set". 
 
 <br/>
 
@@ -101,32 +101,34 @@ The 'head' command will output the first 5 lines of the Data set including the h
 <br/>
 
 * **Sample**<br/>
-From the sample command we will receive an output of 15 random lines from the date set underneath the column headers. Each time this command is executed, a different sample is outputted. Again, we can edit the number of sample lines we wish to see, I chose 15 lines as I thought it was a large enough number to gather some insight of the data recorded. From the sample lines outputted we can see the three different species of Iris are Virginica, Setosa and Versicolor. In total we have 7 lines of data for Setosa, 4 lines for Virginica, and 4 lines for Versicolor. I think this is a resonable sample number for each species, if the output was heavily uneven then I would execute the command again. On the left of the table we see a column of different numbers, these are the line numbers, which tell us where on the table the sample line is from. 
+From the sample command we will receive an output of 15 random lines from the date set underneath the column headers. Each time this command is executed, a different sample is outputted. Again, we can edit the number of sample lines we wish to see, I chose 15 lines as I thought it was a large enough number to gather some insight of the data recorded. From the sample lines outputted we can see the three different species of Iris are Virginica, Setosa and Versicolor. In total we have 6 lines of data for Setosa, 6 lines for Virginica, and 3 lines for Versicolor. I think this is a reasonable sample number for each species as it will be unlikely that I would get an even 5 lines for each of the species. If the output was heavily uneven or there was a species missing from the sample then I would execute the command again. On the left of the table we see a column of different numbers, these are the line numbers which tell us where on the table the sample line is from. <br/>
+If I were to only analyse the data below, I would assume that the Setosa was the smaller of the three species given the petal width of the Setosa on average is 0.2, and the largest petal length counted is 1.6. The Versicolor and Virginica species seem to be more similar in size, however the Virginica is recording the larger numbers across all the columns.
 
 ```
      sepal_length  sepal_width  petal_length  petal_width     species
-129           7.2          3.0           5.8          1.6   virginica
-52            6.9          3.1           4.9          1.5  versicolor
-6             4.6          3.4           1.4          0.3      setosa
-8             4.4          2.9           1.4          0.2      setosa
-24            4.8          3.4           1.9          0.2      setosa
-25            5.0          3.0           1.6          0.2      setosa
-98            5.1          2.5           3.0          1.1  versicolor
-15            5.7          4.4           1.5          0.4      setosa
-83            6.0          2.7           5.1          1.6  versicolor
-108           6.7          2.5           5.8          1.8   virginica
-49            5.0          3.3           1.4          0.2      setosa
-105           7.6          3.0           6.6          2.1   virginica
-21            5.1          3.7           1.5          0.4      setosa
-56            6.3          3.3           4.7          1.6  versicolor
-106           4.9          2.5           4.5          1.7   virginica
+64            5.6          2.9           3.6          1.3  versicolor
+102           7.1          3.0           5.9          2.1   virginica
+103           6.3          2.9           5.6          1.8   virginica
+131           7.9          3.8           6.4          2.0   virginica
+2             4.7          3.2           1.3          0.2      setosa
+144           6.7          3.3           5.7          2.5   virginica
+39            5.1          3.4           1.5          0.2      setosa
+29            4.7          3.2           1.6          0.2      setosa
+116           6.5          3.0           5.5          1.8   virginica
+125           7.2          3.2           6.0          1.8   virginica
+4             5.0          3.6           1.4          0.2      setosa
+65            6.7          3.1           4.4          1.4  versicolor
+27            5.2          3.5           1.5          0.2      setosa
+17            5.1          3.5           1.4          0.3      setosa
+89            5.5          2.5           4.0          1.3  versicolor
 ```
 
 <br/>
 
-* **Value Counts**
+* **Value Counts**<br/>
+We can count the occurance of each species in the data set, which will also confirm the balance of the data if correct. We can see from the output below that each species of Iris was counted 50 times, and there are 150 lines in the data set, so each species has been counted equally. 
+
 ```
-Displaying the number of times a particular data has occured
 setosa        50
 versicolor    50
 virginica     50
@@ -134,7 +136,8 @@ Name: species, dtype: int64
 ```
 <br/>
 
-* **Sum, Mean & Median**
+* **Sum, Mean & Median**<br/>
+
 ```
 Sum: 876.5 
 Mean: 5.843333333333335 
