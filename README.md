@@ -215,12 +215,16 @@ The overlapping histograms will show us the same data as the histograms, however
 <img src="https://user-images.githubusercontent.com/98059109/167313930-62e8eb3b-4e16-430d-92a5-3efae8a30429.png">
 <br/>
 **1. Petal Length**<br/>
+This Overlapping histogram confirms the theory I had when looking at the previous histogram for petal length. That the gap in the petal lengths are the difference between the smaller Setosa species and the Versicolor and Virginica species. This histogram also shows us that the cluster of data on the larger end of the petal length isn't as mixed as I would have thought. Virginica Is at the larger end of the scale, and Versicolor is just below. 
 
 **2. Petal Width**<br/>
+This histogram shows us similar results to the petal length image. Again, all the Setosa data is at the lower end of the petal width size, with a gap between it and the other two species of Iris. Virginica once again is at the larger end of the scale, and Versicolor is just below Virginica. 
 
 **3. Sepal Length**<br/>
+When it comes to the sepal length, we can see that the results of each species overlap a bit more. We can even see an overlap in the middle between the larger setosa sepal length and the smaller Virginica Sepal length. The results show us what we otherwise would have assumed, that Setosa was on the smaller end of the Sepal length and Virginica is on the larger end, with Versicolor in the middle. 
 
 **4. Sepal Width**<br/>
+When looking at the overlapping histogram for Sepal Width, at first glance it looks like a mistake! Setosa seems to have the average larger Sepal width of the three species. Versicolor is on the smaller side instead of the middle, unlike the previous three categories, and Virginica is cushioned in the middle, with quite alot of overlap on either end. 
 
 <br/>
 
