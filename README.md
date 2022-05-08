@@ -208,8 +208,20 @@ The overall count of the sepal seems to be quite varied, with no noticeably larg
 **4. Sepal Width for all Species**<br/>
 The histogram for Sepal with is giving us a triangle result, were the data count on the smaller and larger end of the sepal size are smaller, and it becomes larger in the middle, over the 3cm mark. Again it is difficult to distinguish the Iris species here without making assumptions.
 
+<br/>
+
 ### Overlapping Histograms ###
+The overlapping histograms will show us the same data as the histograms, however it will also show us the result of each species of iris on the histogram. 
 <img src="https://user-images.githubusercontent.com/98059109/167313930-62e8eb3b-4e16-430d-92a5-3efae8a30429.png">
+<br/>
+**1. Petal Length**<br/>
+
+**2. Petal Width**<br/>
+
+**3. Sepal Length**<br/>
+
+**4. Sepal Width**<br/>
+
 <br/>
 
 ### Scatterplots ###
