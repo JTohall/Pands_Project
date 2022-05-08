@@ -42,6 +42,12 @@ print ("\n", file = open ("Summary_of_Variables", "a"))
 # After each command I printed a new line "\n" to make the final output neater and easier to read.
 
 
+# The following command will output all the columns from the dataset in list form.
+print ("An Index of all the Columns", file = open ("Summary_of_Variables", "a")) # Command title
+print (Irisdata.columns, file = open ("Summary_of_Variables", "a")) # 'Columns' command executed
+print ("\n", file = open ("Summary_of_Variables", "a")) # New line
+
+
 # Will print the top 5 lines of the table, including the headers. The default value of the function is 5 lines if no exact command is given and I didn't specify a number.
 print ("Preview of the top 5 Lines from the Data Set", file = open ("Summary_of_Variables", "a")) # Created a title for the command
 print (Irisdata.head(), file = open ("Summary_of_Variables", "a")) # 'head' Command exectuted and output sent to txt file
@@ -51,18 +57,6 @@ print ("\n", file = open ("Summary_of_Variables", "a")) # New line created
 # Similarly, I will also print a 15 line sample of the data, this will print 15 random lines.
 print ("A random sample of 15 lines from the Data Set", file = open ("Summary_of_Variables", "a")) # Command title
 print (Irisdata.sample(15), file = open ("Summary_of_Variables", "a")) # 'Sample' command executed
-print ("\n", file = open ("Summary_of_Variables", "a")) # New line
-
-
-# The following command will output all the columns from the dataset in list form.
-print ("An Index of all the Columns", file = open ("Summary_of_Variables", "a")) # Command title
-print (Irisdata.columns, file = open ("Summary_of_Variables", "a")) # 'Columns' command executed
-print ("\n", file = open ("Summary_of_Variables", "a")) # New line
-
-
-# This will print a statistical insight of each of the four variables in the Data set including the mean values, standard deviation, minimum values and maximum values.
-print ("Statistical Insight", file = open ("Summary_of_Variables", "a")) # Command title
-print (Irisdata.describe(), file = open ("Summary_of_Variables", "a")) # 'Describe' command executed
 print ("\n", file = open ("Summary_of_Variables", "a")) # New line
 
 
@@ -106,6 +100,13 @@ mean_data = Irisdata["petal_width"].mean()
 median_data = Irisdata["petal_width"].median()
 print("Sum:",sum_data, "\nMean:", mean_data, "\nMedian:",median_data, file =open("Summary_of_Variables", "a"))
 print ("\n", file = open ("Summary_of_Variables", "a"))
+
+
+# This will print a statistical insight of each of the four variables in the Data set including the mean values, standard deviation, minimum values and maximum values.
+print ("Statistical Insight", file = open ("Summary_of_Variables", "a")) # Command title
+print (Irisdata.describe(), file = open ("Summary_of_Variables", "a")) # 'Describe' command executed
+print ("\n", file = open ("Summary_of_Variables", "a")) # New line
+
 
 
 ################# Data Analysis #################
