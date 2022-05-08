@@ -65,12 +65,30 @@ As outlined in the project instructions, I was to create a single text file wher
 
 ###  Preprocessing the Data Set ###
 
-Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, Column index and the statistical insight to each variable.
+Before I began to analyse the Data set I preprocessed it. Using a number of different commands to gather information, such as the column size, column index and the statistical insight to each variable. Each command output is then sent to the text file titled "Summary of Variables fromt he Iris Data Set". 
+
+<br/>
 
 * **Shape**<br/>
+The shape command will output the number of lines and columns in the data set. From the output below we can see that there are 150 lines of data and 5 columns. <br/>
+
 ```(150, 5)```
 
-* **Head**
+<br/>
+
+* **Columns**<br/>
+The columns command will give us an index of all the column headers in list form. As you can see below the columns are Sepal Length, Sepal Width, Petal Length and Petal Width. 
+```
+Index(['sepal_length', 'sepal_width', 'petal_length', 'petal_width',
+       'species'],
+      dtype='object')
+```
+
+<br/>
+
+* **Head**<br/>
+The 'head' command will output the first 5 lines of the Data set including the headers. The amount of lines can be edited to more or less, however 5 lines is the deafault setting if no particular number is commanded. This will give us an insight to how the table is formatted, we can also see the four variables labelled at the top: Sepal length, Sepal Width, Petal Length and Petal Width. The last column is the different type of species, and we can see that Setosa is the first of the three species to be labelled. 
+
 ``` 
    sepal_length  sepal_width  petal_length  petal_width species
 0           5.1          3.5           1.4          0.2  setosa
@@ -80,31 +98,31 @@ Before I began to analyse the Data set I preprocessed it. Using a number of diff
 4           5.0          3.6           1.4          0.2  setosa
 ```
 
-* **Sample**
-```
+<br/>
+
+* **Sample**<br/>
+From the sample command we will receive an output of 15 random lines from the date set underneath the column headers. Each time this command is executed, a different sample is outputted. Again, we can edit the number of sample lines we wish to see, I chose 15 lines as I thought it was a large enough number to gather some insight of the data recorded. From the sample lines outputted we can see the three different species of Iris are Virginica, Setosa and Versicolor. In total we have 7 lines of data for Setosa, 4 lines for Virginica, and 4 lines for Versicolor. I think this is a resonable sample number for each species, if the output was heavily uneven then I would execute the command again. On the left of the table we see a column of different numbers, these are the line numbers, which tell us where on the table the sample line is from. 
 
 ```
+     sepal_length  sepal_width  petal_length  petal_width     species
+129           7.2          3.0           5.8          1.6   virginica
+52            6.9          3.1           4.9          1.5  versicolor
+6             4.6          3.4           1.4          0.3      setosa
+8             4.4          2.9           1.4          0.2      setosa
+24            4.8          3.4           1.9          0.2      setosa
+25            5.0          3.0           1.6          0.2      setosa
+98            5.1          2.5           3.0          1.1  versicolor
+15            5.7          4.4           1.5          0.4      setosa
+83            6.0          2.7           5.1          1.6  versicolor
+108           6.7          2.5           5.8          1.8   virginica
+49            5.0          3.3           1.4          0.2      setosa
+105           7.6          3.0           6.6          2.1   virginica
+21            5.1          3.7           1.5          0.4      setosa
+56            6.3          3.3           4.7          1.6  versicolor
+106           4.9          2.5           4.5          1.7   virginica
+```
 
-
-* **Columns**
-```
-Index(['sepal_length', 'sepal_width', 'petal_length', 'petal_width',
-       'species'],
-      dtype='object')
-```
-
-* **Describe**
-```
-       sepal_length  sepal_width  petal_length  petal_width
-count    150.000000   150.000000    150.000000   150.000000
-mean       5.843333     3.054000      3.758667     1.198667
-std        0.828066     0.433594      1.764420     0.763161
-min        4.300000     2.000000      1.000000     0.100000
-25%        5.100000     2.800000      1.600000     0.300000
-50%        5.800000     3.000000      4.350000     1.300000
-75%        6.400000     3.300000      5.100000     1.800000
-max        7.900000     4.400000      6.900000     2.500000
-```
+<br/>
 
 * **Value Counts**
 ```
@@ -114,6 +132,7 @@ versicolor    50
 virginica     50
 Name: species, dtype: int64
 ```
+<br/>
 
 * **Sum, Mean & Median**
 ```
@@ -137,6 +156,21 @@ Mean: 1.1986666666666672
 Median: 1.3
 ```
 
+<br/>
+
+* **Describe**<br/>
+Describe will output 
+```
+       sepal_length  sepal_width  petal_length  petal_width
+count    150.000000   150.000000    150.000000   150.000000
+mean       5.843333     3.054000      3.758667     1.198667
+std        0.828066     0.433594      1.764420     0.763161
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.350000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+```
 <br/>
 
 ### Histograms ###
