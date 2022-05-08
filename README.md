@@ -147,7 +147,7 @@ Name: species, dtype: int64
 <br/>
 
 * **Sum, Mean & Median**<br/>
-I then calcualted the sum, mean and median of each of the species and their petal length, petal 
+I then calcualted the sum, mean and median of each of the columns; petal length, petal width, sepal length and sepal width, including all three species. From this data we can begin to gather some basic information from the data set, for example we can cross reference the mean of each of the categories to the mean of the species result, to better classify the difference species. 
 
 Sepal Length
 ```
@@ -177,7 +177,7 @@ Median: 1.3
 <br/>
 
 * **Describe**<br/>
-Describe will output 
+Describe will output similar results to the sum, mean & median command above, however it will give us some more information, such as the total count of each category, the standard deviation, minimum values and maximum values. It will also output all of the information in a table format. This table will be a good referencing point when analysing each of the different species and their measurements in each category.
 ```
        sepal_length  sepal_width  petal_length  petal_width
 count    150.000000   150.000000    150.000000   150.000000
